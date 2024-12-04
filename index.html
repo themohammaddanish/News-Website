@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A brief description of the page">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Your Name">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact" class="right">Contact</a>
+    <div class="auth-buttons">
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+      
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <button type="submit">Login</button>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+      
+      <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+      <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+      <div id="id02" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+
+          <div class="container">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+            <button type="submit">Sign Up</button>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+      <script>
+        var modal2 = document.getElementById('id02');
+        window.onclick = function(event) {
+          if (event.target == modal2) {
+            modal2.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+  </nav>
+  <section class="advertising"></section>
+    <div class="ad-item">
+      <img src="/add11.jpg" alt="Ad Image 1">
+      <h2>This is for Advertising</h2>
+      <p>Ad description 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+   
+  </section>
+  <section class="news-articles">
+    <article class="news-article">
+      <h2>Article Title 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae odio tincidunt tincidunt.</p>
+      <a href="#read-more">Read more</a>
+    </article>
+    <article class="news-article">
+      <h2>Article Title 2</h2>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer nec odio.</p>
+      <a href="#read-more">Read more</a>
+    </article>
+    <article class="news-article">
+      <h2>Article Title 3</h2>
+      <p>Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+      <a href="#read-more">Read more</a>
+    </article>
+    <article class="news-article">
+      <h2>Article Title 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae odio tincidunt tincidunt.</p>
+      <a href="#read-more">Read more</a>
+    </article><article class="news-article">
+      <h2>Article Title 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae odio tincidunt tincidunt.</p>
+      <a href="#read-more">Read more</a>
+    </article><article class="news-article">
+      <h2>Article Title 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae odio tincidunt tincidunt.</p>
+      <a href="#read-more">Read more</a>
+    </article>
+  </section>
+  <section class="latest-news">
+    <h2>Latest News</h2>
+    <div class="news-item">
+      <img src="/add10.jpg" alt="News Image 1">
+      <div class="news-content">
+        <h3>News Title 1</h3>
+        <p>Brief description of the news content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="/add10.jpg" alt="News Image 2">
+      <div class="news-content">
+        <h3>News Title 2</h3>
+        <p>Brief description of the news content. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="/add10.jpg" alt="News Image 3">
+      <div class="news-content">
+        <h3>News Title 3</h3>
+        <p>Brief description of the news content. Curabitur blandit tempus porttitor. Integer posuere erat a ante.</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="/add10.jpg" alt="News Image 1">
+      <div class="news-content">
+        <h3>News Title 1</h3>
+        <p>Brief description of the news content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="/add10.jpg" alt="News Image 1">
+      <div class="news-content">
+        <h3>News Title 1</h3>
+        <p>Brief description of the news content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="footer"></section>
+<p>&copy; 2023 Your Name. All rights reserved.</p>
+<ul>
+  <li><a href="#privacy">Privacy Policy</a></li>
+  <li><a href="#terms">Terms of Service</a></li>
+</ul>
+  </footer>
+</body>
+</html>
